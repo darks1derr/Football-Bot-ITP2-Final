@@ -1,0 +1,38 @@
+{
+  "856015188": {
+    "display_name": "дархан",
+    "username": "daurambekov10",
+    "favorite_team": "barcelona",
+    "favorite_league": "PL",
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [],
+      "answer_order": [],
+      "best_score": 5,
+      "games_played": 4,
+      "total_score": 17,
+      "difficulty": "easy"
+    }
+  },
+  "1393202708": {
+    "display_name": "meyirman",
+    "username": "aidarchik001",
+    "favorite_team": "barcelona",
+    "favorite_league": null,
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [],
+      "answer_order": [],
+      "best_score": 4,
+      "games_played": 1,
+      "total_score": 4,
+      "difficulty": "random"
+    }
+  }
+}

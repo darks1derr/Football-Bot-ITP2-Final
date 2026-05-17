@@ -1,0 +1,121 @@
+[
+  {
+    "question": "How many players does one football team start with on the pitch?",
+    "options": ["9", "10", "11", "12"],
+    "answer_index": 2,
+    "difficulty": "easy",
+    "category": "Rules"
+  },
+  {
+    "question": "What is the name of a kick taken from 11 meters?",
+    "options": ["Free kick", "Penalty", "Corner", "Throw-in"],
+    "answer_index": 1,
+    "difficulty": "easy",
+    "category": "Rules"
+  },
+  {
+    "question": "How long is a standard football match without added time?",
+    "options": ["60 minutes", "80 minutes", "90 minutes", "100 minutes"],
+    "answer_index": 2,
+    "difficulty": "easy",
+    "category": "Rules"
+  },
+  {
+    "question": "What card means a player must leave the match?",
+    "options": ["Blue card", "Green card", "Yellow card", "Red card"],
+    "answer_index": 3,
+    "difficulty": "easy",
+    "category": "Rules"
+  },
+  {
+    "question": "Which position usually protects the goal?",
+    "options": ["Striker", "Goalkeeper", "Winger", "Midfielder"],
+    "answer_index": 1,
+    "difficulty": "easy",
+    "category": "Rules"
+  },
+  {
+    "question": "How many points does a team get for a league win?",
+    "options": ["1", "2", "3", "4"],
+    "answer_index": 2,
+    "difficulty": "easy",
+    "category": "Leagues"
+  },
+  {
+    "question": "What is a hat-trick?",
+    "options": ["Three goals by one player", "Three yellow cards", "Three substitutions", "Three corners in a row"],
+    "answer_index": 0,
+    "difficulty": "easy",
+    "category": "Terms"
+  },
+  {
+    "question": "Which club is known as The Reds in the Premier League?",
+    "options": ["Chelsea", "Liverpool", "Tottenham", "Everton"],
+    "answer_index": 1,
+    "difficulty": "medium",
+    "category": "Clubs"
+  },
+  {
+    "question": "Which competition is the main club tournament in Europe?",
+    "options": ["UEFA Champions League", "FA Cup", "Copa America", "UEFA Nations League"],
+    "answer_index": 0,
+    "difficulty": "medium",
+    "category": "Competitions"
+  },
+  {
+    "question": "What does VAR stand for?",
+    "options": ["Video Assistant Referee", "Virtual Attack Rating", "Verified Away Result", "Video Action Replay"],
+    "answer_index": 0,
+    "difficulty": "medium",
+    "category": "Rules"
+  },
+  {
+    "question": "Which country won the 2022 FIFA World Cup?",
+    "options": ["France", "Brazil", "Argentina", "Germany"],
+    "answer_index": 2,
+    "difficulty": "medium",
+    "category": "World Cup"
+  },
+  {
+    "question": "Which tournament is played by national teams from Europe?",
+    "options": ["Copa Libertadores", "UEFA European Championship", "AFC Champions League", "FA Community Shield"],
+    "answer_index": 1,
+    "difficulty": "medium",
+    "category": "Competitions"
+  },
+  {
+    "question": "What is awarded when the ball crosses the goal line last touched by a defender, but no goal is scored?",
+    "options": ["Corner kick", "Penalty", "Throw-in", "Kick-off"],
+    "answer_index": 0,
+    "difficulty": "medium",
+    "category": "Rules"
+  },
+  {
+    "question": "Which line must the whole ball cross for a goal to count?",
+    "options": ["Halfway line", "Touchline", "Goal line", "Penalty area line"],
+    "answer_index": 2,
+    "difficulty": "hard",
+    "category": "Rules"
+  },
+  {
+    "question": "In football-data.org league codes, which code is used for the Bundesliga?",
+    "options": ["BDL", "BL1", "GER1", "BUN"],
+    "answer_index": 1,
+    "difficulty": "hard",
+    "category": "Data"
+  },
+  {
+    "question": "Which club plays home matches at the Allianz Arena?",
+    "options": ["Borussia Dortmund", "Bayern Munich", "RB Leipzig", "Bayer Leverkusen"],
+    "answer_index": 1,
+    "difficulty": "hard",
+    "category": "Clubs"
+  },
+  {
+    "question": "Which club is associated with the Santiago Bernabeu stadium?",
+    "options": ["Barcelona", "Atletico Madrid", "Real Madrid", "Sevilla"],
+    "answer_index": 2,
+    "difficulty": "hard",
+    "category": "Clubs"
+  }
+]

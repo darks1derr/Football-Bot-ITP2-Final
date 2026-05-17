@@ -1,0 +1,58 @@
+[
+  {
+    "id": "arsenal",
+    "api_id": 57,
+    "name": "Arsenal",
+    "league": "Premier League",
+    "league_code": "PL"
+  },
+  {
+    "id": "liverpool",
+    "api_id": 64,
+    "name": "Liverpool",
+    "league": "Premier League",
+    "league_code": "PL"
+  },
+  {
+    "id": "man_city",
+    "api_id": 65,
+    "name": "Manchester City",
+    "league": "Premier League",
+    "league_code": "PL"
+  },
+  {
+    "id": "barcelona",
+    "api_id": 81,
+    "name": "Barcelona",
+    "league": "La Liga",
+    "league_code": "PD"
+  },
+  {
+    "id": "real_madrid",
+    "api_id": 86,
+    "name": "Real Madrid",
+    "league": "La Liga",
+    "league_code": "PD"
+  },
+  {
+    "id": "bayern",
+    "api_id": 5,
+    "name": "Bayern Munich",
+    "league": "Bundesliga",
+    "league_code": "BL1"
+  },
+  {
+    "id": "psg",
+    "api_id": 524,
+    "name": "Paris Saint-Germain",
+    "league": "Ligue 1",
+    "league_code": "FL1"
+  },
+  {
+    "id": "juventus",
+    "api_id": 109,
+    "name": "Juventus",
+    "league": "Serie A",
+    "league_code": "SA"
+  }
+]
