@@ -48,7 +48,7 @@ The project was developed using Python and Telegram Bot API.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-repository-name.git
+git clone https://github.com/darks1derr/Football-Bot-ITP2-Final
 ```
 
 2. Install dependencies
