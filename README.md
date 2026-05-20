@@ -1,111 +1,91 @@
 # Football Fan Assistant Bot
 
-Telegram bot built with Python and `python-telegram-bot`.
+## Project Description
 
-## Architecture
+Football Fan Assistant Bot is a Telegram bot created for football fans.
+The bot allows users to view football standings, match schedules, favorite team information, and play football quizzes directly inside Telegram.
 
-The bot uses both JSON and API data:
+The project was developed using Python and Telegram Bot API.
 
-- JSON stores user data, quiz questions, ranking, favorite team, favorite league, notification settings, teams, leagues, and API cache.
-- football-data.org API provides live standings, league matches, team fixtures, and team form.
-
-This keeps the project realistic: JSON is used for local state, while live football information comes from an external API.
+---
 
 ## Features
 
-- Matches by favorite league through API.
-- League standings through API.
-- `My Team` with favorite team, next matches, recent form, and reminders.
-- `Settings` for favorite team and favorite league.
-- Quiz with random questions, difficulty levels, and categories.
-- Quiz ranking stored in `users.json`.
-- API response cache stored in `api_cache.json`.
+* View football standings
+* View upcoming matches
+* Save favorite team
+* Football quiz system
+* Ranking system
+* Interactive Telegram menus
+* API integration with football-data.org
+* JSON data storage
+
+---
+
+## Technologies Used
+
+* Python
+* python-telegram-bot
+* Telegram Bot API
+* football-data.org API
+* JSON
+
+---
 
 ## Project Structure
 
-```text
-.
-├── bot.py
-├── config.py
-├── football_api.py
-├── keyboards.py
-├── storage.py
-├── requirements.txt
-├── .env
-├── .env.example
-└── data/
-    ├── api_cache.json
-    ├── leagues.json
-    ├── teams.json
-    ├── quiz.json
-    └── users.json
+* `bot.py` — main bot logic
+* `football_api.py` — work with football API
+* `storage.py` — reading and writing JSON files
+* `keyboards.py` — Telegram keyboards
+* `config.py` — configuration and tokens
+* `data/` — JSON storage files
+
+---
+
+## Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/darks1derr/Football-Bot-ITP2-Final
 ```
 
-## Environment
+2. Install dependencies
 
-Edit `.env`:
-
-```env
-BOT_TOKEN=your_telegram_bot_token
-FOOTBALL_DATA_TOKEN=your_football_data_token
-REMINDER_MINUTES=60
-NOTIFICATION_CHECK_SECONDS=60
-QUIZ_QUESTION_LIMIT=5
+```bash
+pip install -r requirements.txt
 ```
 
-Get a football-data.org token:
+3. Add your Telegram Bot Token and API key in `config.py`
 
-```text
-https://www.football-data.org/client/register
+4. Run the bot
+
+```bash
+python bot.py
 ```
 
-## Run
+---
 
-```powershell
-.\.venv\Scripts\python.exe -m pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
-.\.venv\Scripts\python.exe bot.py
-```
+## Challenges Faced
 
-## Commands
+* Working with external API responses
+* Organizing project structure
+* Handling user data
+* Managing asynchronous functions
 
-```text
-/start - Open the main menu
-/matches - Show matches for your favorite league
-/standings - Choose a league table
-/team - Open My Team
-/quiz - Start quiz
-/ranking - Show quiz ranking
-/settings - Change team or league
-/help - Show help
-```
+---
 
-## JSON Files
+## Future Improvements
 
-- `data/users.json` - users, favorite team, favorite league, notifications, quiz ranking.
-- `data/quiz.json` - quiz questions with difficulty and category.
-- `data/teams.json` - teams that can be selected as favorites.
-- `data/leagues.json` - leagues available in the menu.
-- `data/api_cache.json` - cached API responses.
+* Add database support
+* Add live match notifications
+* Add more football leagues
+* Improve quiz system
 
-## API Features
-
-- Standings: `/v4/competitions/{code}/standings`
-- League matches: `/v4/competitions/{code}/matches`
-- Team upcoming matches: `/v4/teams/{id}/matches`
-- Team form: `/v4/teams/{id}/matches?status=FINISHED`
-
-## OOP In This Project
-
-The project uses simple Object-Oriented Programming in `football_api.py`.
-
-- `BaseAPIClient` is the base class for API requests.
-- `FootballAPI` inherits from `BaseAPIClient`.
-- `FootballAPI` has methods for standings, league matches, team matches, and recent form.
-- `bot.py` creates one object: `football_api = FootballAPI()`.
-
-This is a simple inheritance example that is easy to explain during defense.
+---
 
 ## Team Members
 
-- Darkhan Daurambekov: Telegram bot handlers, menus, commands, and user actions, API integration.
-- Magzhan Assankhan: JSON data, exception handling, README/report, and testing.
+•	Darkhan Daurambekov - main bot structure, Telegram commands, and football API integration.
+•	Magzhan Assankhan - quiz system, JSON data storage, testing, debugging, and project documentation.
