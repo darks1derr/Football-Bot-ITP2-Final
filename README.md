@@ -93,3 +93,19 @@ https://www.football-data.org/client/register
 - League matches: `/v4/competitions/{code}/matches`
 - Team upcoming matches: `/v4/teams/{id}/matches`
 - Team form: `/v4/teams/{id}/matches?status=FINISHED`
+
+## OOP In This Project
+
+The project uses simple Object-Oriented Programming in `football_api.py`.
+
+- `BaseAPIClient` is the base class for API requests.
+- `FootballAPI` inherits from `BaseAPIClient`.
+- `FootballAPI` has methods for standings, league matches, team matches, and recent form.
+- `bot.py` creates one object: `football_api = FootballAPI()`.
+
+This is a simple inheritance example that is easy to explain during defense.
+
+## Team Members
+
+- Darkhan Daurambekov: Telegram bot handlers, menus, commands, and user actions, API integration.
+- Magzhan Assankhan: JSON data, exception handling, README/report, and testing.

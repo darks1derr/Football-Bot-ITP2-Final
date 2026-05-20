@@ -21,14 +21,7 @@ from config import (
     REMINDER_MINUTES,
     validate_settings,
 )
-from football_api import (
-    FootballDataError,
-    fetch_competition_matches,
-    fetch_standings,
-    fetch_team_recent_matches,
-    fetch_team_upcoming_matches,
-    has_api_token,
-)
+from football_api import FootballAPI, FootballDataError
 from keyboards import (
     BTN_HELP,
     BTN_MATCHES,
@@ -64,6 +57,7 @@ logging.basicConfig(
     level=logging.INFO,
 )
 logger = logging.getLogger(__name__)
+football_api = FootballAPI()
 
 
 TITLE = "Football Fan Assistant"
@@ -125,7 +119,7 @@ async def show_matches(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     if not update.effective_user:
         return
 
-    if not has_api_token():
+    if not football_api.has_token():
         await update.effective_message.reply_text(api_token_message(), reply_markup=main_menu())
         return
 
@@ -145,7 +139,7 @@ async def choose_standings_league(
     update: Update, context: ContextTypes.DEFAULT_TYPE
 ) -> None:
     remember_user(update)
-    if not has_api_token():
+    if not football_api.has_token():
         await update.effective_message.reply_text(api_token_message(), reply_markup=main_menu())
         return
 
@@ -282,7 +276,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
 
 
 async def send_standings(message: Message, competition_code: str) -> None:
-    if not has_api_token():
+    if not football_api.has_token():
         await message.reply_text(api_token_message(), reply_markup=main_menu())
         return
 
@@ -291,7 +285,7 @@ async def send_standings(message: Message, competition_code: str) -> None:
     await message.reply_text(f"Loading standings: {league_name}...")
 
     try:
-        data = await fetch_standings(competition_code)
+        data = await football_api.fetch_standings(competition_code)
     except FootballDataError as error:
         await message.reply_text(
             f"Standings are unavailable.\nReason: {error}",
@@ -303,7 +297,7 @@ async def send_standings(message: Message, competition_code: str) -> None:
 
 
 async def send_league_matches(message: Message, competition_code: str) -> None:
-    if not has_api_token():
+    if not football_api.has_token():
         await message.reply_text(api_token_message(), reply_markup=main_menu())
         return
 
@@ -312,7 +306,7 @@ async def send_league_matches(message: Message, competition_code: str) -> None:
     await message.reply_text(f"Loading matches: {league_name}...")
 
     try:
-        data = await fetch_competition_matches(competition_code, days=7)
+        data = await football_api.fetch_competition_matches(competition_code, days=7)
     except FootballDataError as error:
         await message.reply_text(
             f"Matches are unavailable.\nReason: {error}",
@@ -353,7 +347,7 @@ async def send_my_team_card(message: Message, user_id: int) -> None:
         f"Match reminders: {reminder_status}",
     ]
 
-    if not has_api_token():
+    if not football_api.has_token():
         lines.append("")
         lines.append("Live team data needs FOOTBALL_DATA_TOKEN in .env.")
         await message.reply_text(
@@ -363,8 +357,8 @@ async def send_my_team_card(message: Message, user_id: int) -> None:
         return
 
     try:
-        upcoming = await fetch_team_upcoming_matches(team["api_id"], days=30, limit=3)
-        recent = await fetch_team_recent_matches(team["api_id"], limit=5)
+        upcoming = await football_api.fetch_team_upcoming_matches(team["api_id"], days=30, limit=3)
+        recent = await football_api.fetch_team_recent_matches(team["api_id"], limit=5)
     except FootballDataError as error:
         lines.append("")
         lines.append(f"Team data is unavailable: {error}")
@@ -593,7 +587,7 @@ async def notification_loop(application: Application) -> None:
 
 
 async def send_match_reminders(application: Application) -> None:
-    if not has_api_token():
+    if not football_api.has_token():
         return
 
     users = load_users()
@@ -615,7 +609,7 @@ async def send_match_reminders(application: Application) -> None:
             continue
 
         try:
-            matches = await fetch_team_upcoming_matches(team["api_id"], days=2, limit=5)
+            matches = await football_api.fetch_team_upcoming_matches(team["api_id"], days=2, limit=5)
         except FootballDataError:
             continue
 

@@ -3,7 +3,7 @@
     "display_name": "дархан",
     "username": "daurambekov10",
     "favorite_team": "barcelona",
-    "favorite_league": "PL",
+    "favorite_league": "PD",
     "notifications_enabled": false,
     "notified_matches": [],
     "quiz": {
@@ -12,16 +12,16 @@
       "order": [],
       "answer_order": [],
       "best_score": 5,
-      "games_played": 4,
-      "total_score": 17,
-      "difficulty": "easy"
+      "games_played": 5,
+      "total_score": 21,
+      "difficulty": "hard"
     }
   },
   "1393202708": {
     "display_name": "meyirman",
     "username": "aidarchik001",
     "favorite_team": "barcelona",
-    "favorite_league": null,
+    "favorite_league": "PD",
     "notifications_enabled": false,
     "notified_matches": [],
     "quiz": {
@@ -30,8 +30,304 @@
       "order": [],
       "answer_order": [],
       "best_score": 4,
+      "games_played": 2,
+      "total_score": 7,
+      "difficulty": "hard"
+    }
+  },
+  "1025188109": {
+    "display_name": "akon",
+    "username": "sirex_228",
+    "favorite_team": "barcelona",
+    "favorite_league": "PD",
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [],
+      "answer_order": [],
+      "best_score": 5,
       "games_played": 1,
-      "total_score": 4,
+      "total_score": 5,
+      "difficulty": "easy"
+    }
+  },
+  "7575799655": {
+    "display_name": "Mamba",
+    "username": "mammba24",
+    "favorite_team": "juventus",
+    "favorite_league": "SA",
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [],
+      "answer_order": [],
+      "best_score": 5,
+      "games_played": 1,
+      "total_score": 5,
+      "difficulty": "easy"
+    }
+  },
+  "1348004632": {
+    "display_name": "Uldanay",
+    "username": "u1dashka",
+    "favorite_team": null,
+    "favorite_league": null,
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [
+        6,
+        0,
+        4,
+        2,
+        3
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "best_score": 0,
+      "games_played": 0,
+      "total_score": 0,
+      "difficulty": "easy"
+    }
+  },
+  "1078919009": {
+    "display_name": "Inzhukkai",
+    "username": "inzhukkai",
+    "favorite_team": "barcelona",
+    "favorite_league": "PD",
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [],
+      "answer_order": [],
+      "best_score": 0,
+      "games_played": 0,
+      "total_score": 0,
+      "difficulty": "random"
+    }
+  },
+  "6074783019": {
+    "display_name": "Arthur M.",
+    "username": "Assylzhan_naverno",
+    "favorite_team": null,
+    "favorite_league": "PL",
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [],
+      "answer_order": [],
+      "best_score": 0,
+      "games_played": 0,
+      "total_score": 0,
+      "difficulty": "random"
+    }
+  },
+  "1670790688": {
+    "display_name": "Макс",
+    "username": "kimi_no_itomori",
+    "favorite_team": null,
+    "favorite_league": null,
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [],
+      "answer_order": [],
+      "best_score": 0,
+      "games_played": 0,
+      "total_score": 0,
+      "difficulty": "random"
+    }
+  },
+  "1858537816": {
+    "display_name": "исмаил",
+    "username": "blxwqz",
+    "favorite_team": null,
+    "favorite_league": "PL",
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 2,
+      "score": 0,
+      "order": [
+        2,
+        4,
+        1,
+        3,
+        0
+      ],
+      "answer_order": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "best_score": 0,
+      "games_played": 0,
+      "total_score": 0,
+      "difficulty": "easy"
+    }
+  },
+  "1757134668": {
+    "display_name": "Саят",
+    "username": "s4yatik",
+    "favorite_team": null,
+    "favorite_league": "PL",
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [],
+      "answer_order": [],
+      "best_score": 0,
+      "games_played": 0,
+      "total_score": 0,
+      "difficulty": "random"
+    }
+  },
+  "7816391423": {
+    "display_name": "Hello",
+    "username": "kzhaa12",
+    "favorite_team": null,
+    "favorite_league": null,
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [
+        12,
+        9,
+        10,
+        7,
+        8
+      ],
+      "answer_order": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "best_score": 0,
+      "games_played": 0,
+      "total_score": 0,
+      "difficulty": "medium"
+    }
+  },
+  "950139807": {
+    "display_name": "Kaizen",
+    "username": "Kaizenchik",
+    "favorite_team": null,
+    "favorite_league": "FL1",
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 2,
+      "score": 2,
+      "order": [
+        0,
+        4,
+        3,
+        5,
+        1
+      ],
+      "answer_order": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "best_score": 0,
+      "games_played": 0,
+      "total_score": 0,
+      "difficulty": "easy"
+    }
+  },
+  "1426249037": {
+    "display_name": "asik",
+    "username": "Xzhz0",
+    "favorite_team": null,
+    "favorite_league": "PL",
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [],
+      "answer_order": [],
+      "best_score": 0,
+      "games_played": 0,
+      "total_score": 0,
+      "difficulty": "random"
+    }
+  },
+  "8141807935": {
+    "display_name": "Dauren",
+    "username": "Daurenbek_Anuar",
+    "favorite_team": null,
+    "favorite_league": null,
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [],
+      "answer_order": [],
+      "best_score": 0,
+      "games_played": 0,
+      "total_score": 0,
+      "difficulty": "random"
+    }
+  },
+  "1046066915": {
+    "display_name": "аки",
+    "username": "alkioa",
+    "favorite_team": null,
+    "favorite_league": null,
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [],
+      "answer_order": [],
+      "best_score": 0,
+      "games_played": 0,
+      "total_score": 0,
+      "difficulty": "random"
+    }
+  },
+  "5564776814": {
+    "display_name": "~BEK",
+    "username": null,
+    "favorite_team": null,
+    "favorite_league": null,
+    "notifications_enabled": false,
+    "notified_matches": [],
+    "quiz": {
+      "current": 0,
+      "score": 0,
+      "order": [],
+      "answer_order": [],
+      "best_score": 0,
+      "games_played": 0,
+      "total_score": 0,
       "difficulty": "random"
     }
   }

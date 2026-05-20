@@ -1,13 +1,13 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup
 
 
-BTN_MATCHES = "Matches"
-BTN_STANDINGS = "Standings"
-BTN_MY_TEAM = "My Team"
-BTN_QUIZ = "Quiz"
-BTN_RANKING = "Ranking"
-BTN_SETTINGS = "Settings"
-BTN_HELP = "Help"
+BTN_MATCHES = "⚽ Matches"
+BTN_STANDINGS = "📊 Standings"
+BTN_MY_TEAM = "🩷 My Team"
+BTN_QUIZ = "♟️ Quiz"
+BTN_RANKING = "🔢 Ranking"
+BTN_SETTINGS = "⚙️ Settings"
+BTN_HELP = "❓ Help"
 
 
 def main_menu() -> ReplyKeyboardMarkup:
